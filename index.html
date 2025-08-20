@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chit Schemes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./images/i1.jpeg" width="70" height="58" class="me-2">
+      <span>TRS CHITS PVT.LTD</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chit">Chit Schemes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+
+<!-- Section: Chit Plans -->
+<section id="chit" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Chit Plans</h2>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="chitTabs" role="tablist"></ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content mt-4" id="chitContent"></div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <div class="mb-2">
+    <a class="btn btn-sm text-white m-1" style="background:#3b5998" href="#"><i class="fa fa-facebook"></i></a>
+    <a class="btn btn-sm text-white m-1" style="background:#55acee" href="#"><i class="fa fa-twitter"></i></a>
+    <a class="btn btn-sm text-white m-1" style="background:#dd4b39" href="#"><i class="fa fa-google"></i></a>
+    <a class="btn btn-sm text-white m-1" style="background:#ac2bac" href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+  <div>© 2025 CREATED BY SELVAGANAPATHI</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Initial chit data
+let chitPlans = [
+  {
+    name: "₹1 Lakh Plan",
+    amount: "₹1,00,000",
+    rows: [
+      { month: 1, user: "₹5000", nonUser: "₹5000", chit: "₹96,000" },
+      { month: 2, user: "₹6000", nonUser: "₹4950", chit: "₹96,000" },
+      { month: 3, user: "₹6000", nonUser: "₹4890", chit: "₹96,000" },
+      { month: 4, user: "₹6000", nonUser: "₹4825", chit: "₹96,000" },
+      { month: 5, user: "₹6000", nonUser: "₹4750", chit: "₹96,000" },
+      { month: 6, user: "₹6000", nonUser: "₹4665", chit: "₹96,000" },
+      { month: 7, user: "₹6000", nonUser: "₹4575", chit: "₹96,000" },
+      { month: 8, user: "₹6000", nonUser: "₹4460", chit: "₹96,000" },
+      { month: 9, user: "₹6000", nonUser: "₹4335", chit: "₹96,000" },
+      { month: 10, user: "₹6000", nonUser: "₹4180", chit: "₹96,000" },
+      { month: 11, user: "₹6000", nonUser: "₹4000", chit: "₹96,000" },
+      { month: 12, user: "₹6000", nonUser: "₹3780", chit: "₹96,000" },
+      { month: 13, user: "₹6000", nonUser: "₹3500", chit: "₹96,000" },
+      { month: 14, user: "₹6000", nonUser: "₹3140", chit: "₹96,000" },
+      { month: 15, user: "₹6000", nonUser: "₹2660", chit: "₹96,000" },
+      { month: 16, user: "₹5850", nonUser: "₹2450", chit: "₹96,000" },
+      { month: 17, user: "₹5750", nonUser: "₹2000", chit: "₹96,000" },
+      { month: 18, user: "₹5600", nonUser: "₹1600", chit: "₹96,000" },
+      { month: 19, user: "₹5450", nonUser: "₹950", chit: "₹96,000" },
+      { month: 20, user: "₹5225", nonUser: "₹725", chit: "₹96,000" },
+      {month: "TotalPayable", user:"₹1,16,875",nonUser:"₹71,435",chit:"₹96,000"}
+
+    ]
+  },
+  {
+    name: "₹2 Lakh Plan",
+    amount: "₹2,00,000",
+    rows: [
+      { month: 1, user: "₹10,000", nonUser: "₹10,000", chit: "₹1,92,000" },
+      { month: 2, user: "₹12,000", nonUser: "₹9,900", chit: "₹1,92,000" },
+      { month: 3, user: "₹12,000", nonUser: "₹9,780", chit: "₹1,92,000" },
+      { month: 4, user: "₹12,000", nonUser: "₹9,650", chit: "₹1,92,000" },
+      { month: 5, user: "₹12,000", nonUser: "₹9,500", chit: "₹1,92,000" },
+      { month: 6, user: "₹12,000", nonUser: "₹9,330", chit: "₹1,92,000" },
+      { month: 7, user: "₹12,000", nonUser: "₹9,140", chit: "₹1,92,000" },
+      { month: 8, user: "₹12,000", nonUser: "₹8,920", chit: "₹1,92,000" },
+      { month: 9, user: "₹12,000", nonUser: "₹8,670", chit: "₹1,92,000" },
+      { month: 10, user: "₹12,000", nonUser: "₹8,360", chit: "₹1,92,000" },
+      { month: 11, user: "₹12,000", nonUser: "₹8,000", chit: "₹1,92,000" },
+      { month: 12, user: "₹12,000", nonUser: "₹7,555", chit: "₹1,92,000" },
+      { month: 13, user: "₹12,000", nonUser: "₹7,000", chit: "₹1,92,000" },
+      { month: 14, user: "₹12,000", nonUser: "₹6,285", chit: "₹1,92,000" },
+      { month: 15, user: "₹12,000", nonUser: "₹5,330", chit: "₹1,92,000" },
+      { month: 16, user: "₹11,700", nonUser: "₹4,900", chit: "₹1,92,000" },
+      { month: 17, user: "₹11,500", nonUser: "₹4,000", chit: "₹1,92,000" },
+      { month: 18, user: "₹11,200", nonUser: "₹3,200", chit: "₹1,92,000" },
+      { month: 19, user: "₹10,900", nonUser: "₹1,900", chit: "₹1,92,000" },
+      { month: 20, user: "₹10,450", nonUser: "₹1,450", chit: "₹1,92,000" },
+      {month: "TotalPayable", user:"₹2,33,750",nonUser:"₹1,42,870",chit:"₹1,92,000"}
+  ]
+  },
+  {
+    name: "₹5 Lakh Plan",
+    amount: "₹5,00,000",
+    rows: [
+      { month: 1, user: "₹20,000", nonUser: "₹20,0000", chit: "₹4,80,000" },
+      { month: 2, user: "₹21,000", nonUser: "₹19,950", chit: "₹4,80,000" },
+      { month: 3, user: "₹22,000", nonUser: "₹19,850", chit: "₹4,80,000" },
+      { month: 4, user: "₹23,000", nonUser: "₹19,600", chit: "₹4,80,000" },
+      { month: 5, user: "₹24,000", nonUser: "₹19,250", chit: "₹4,80,000" },
+      { month: 6, user: "₹25,000", nonUser: "₹18,750", chit: "₹4,80,000" },
+      { month: 7, user: "₹25,000", nonUser: "₹18,420", chit: "₹4,80,000" },
+      { month: 8, user: "₹25,000", nonUser: "₹18,055", chit: "₹4,80,000" },
+      { month: 9, user: "₹25,000", nonUser: "₹17,650", chit: "₹4,80,000" },
+      { month: 10, user: "₹25,000", nonUser: "₹17,190", chit: "₹4,80,000" },
+      { month: 11, user: "₹25,000", nonUser: "₹16,660", chit: "₹4,80,000" },
+      { month: 12, user: "₹25,000", nonUser: "₹16,070", chit: "₹4,80,000" },
+      { month: 13, user: "₹25,000", nonUser: "₹15,380", chit: "₹4,80,000" },
+      { month: 14, user: "₹25,000", nonUser: "₹14,580", chit: "₹4,80,000" },
+      { month: 15, user: "₹25,000", nonUser: "₹13,630", chit: "₹4,80,000" },
+      { month: 16, user: "₹25,000", nonUser: "₹12,500", chit: "₹4,80,000" },
+      { month: 17, user: "₹25,000", nonUser: "₹11,110", chit: "₹4,80,000" },
+      { month: 18, user: "₹25,000", nonUser: "₹9,370", chit: "₹4,80,000" },
+      { month: 19, user: "₹25,000", nonUser: "₹7,140", chit: "₹4,80,000" },
+      { month: 20, user: "₹25,000", nonUser: "₹4,160", chit: "₹4,80,000" },
+      { month: 21, user: "₹24,100", nonUser: "₹4,000", chit: "₹4,80,000" },
+      { month: 22, user: "₹23,100", nonUser: "₹3,725", chit: "₹4,80,000" },
+      { month: 23, user: "₹22,250", nonUser: "₹3,500", chit: "₹4,80,000" },
+      { month: 24, user: "₹21,480", nonUser: "₹3,000", chit: "₹4,80,000" },
+      { month: 25, user: "₹20,750", nonUser: "₹2,000", chit: "₹4,80,000" },
+      {month: "Total Payable", user:"₹5,96,580",nonUser:"₹3,25,560",chit:"₹4,80,000"}
+    ]
+  }
+];
+
+// Render plans
+// Render tabs + tables dynamically
+const tabs = document.getElementById("chitTabs","homeTabs");
+// const tabs = document.getElementById("homeTabs");
+
+const content = document.getElementById("chitContent");
+
+chitPlans.forEach((plan, i) => {
+  // Tab
+  tabs.innerHTML += `
+    <li class="nav-item" role="presentation">
+      <button class="nav-link ${i === 0 ? "active" : ""}" id="tab-${i}" data-bs-toggle="tab" data-bs-target="#content-${i}" type="button" role="tab">
+        ${plan.name}
+      </button>
+    </li>
+  `;
+
+  // Table
+  let rowsHTML = plan.rows.map(r => `
+    <tr>
+      <td>${r.month}</td>
+      <td>${r.user}</td>
+      <td>${r.nonUser}</td>
+      <td>${r.chit}</td>
+    </tr>
+  `).join("");
+
+  content.innerHTML += `
+    <div class="tab-pane fade ${i === 0 ? "show active" : ""}" id="content-${i}" role="tabpanel">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Months</th>
+              <th>User Payable Monthly</th>
+              <th>Non-User Monthly</th>
+              <th>Chit Amount Fixed</th>
+            </tr>
+          </thead>
+          <tbody>${rowsHTML}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+});
+</script>
+</body>
+</html>

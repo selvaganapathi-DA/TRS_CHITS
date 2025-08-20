@@ -1,0 +1,27 @@
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; /* Example: Set table width to 80% */
+
+    }
+        .myFooter {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        /* Other styling */
+    }
+.footer {
+  padding: 0;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer .btn {
+  margin: 2px; /* Reduce the margin around social media buttons */
+}
+
+.footer .text-center {
+  padding: 2px; /* Reduce the padding for the copyright section */
+}
